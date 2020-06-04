@@ -22,16 +22,20 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@nestjs/common": "^7.0.0",
-    "@nestjs/core": "^7.0.0",
-    "@nestjs/platform-express": "^7.0.0",
-    "reflect-metadata": "^0.1.13",
-    "rimraf": "^3.0.2",
-    "rxjs": "^6.5.4",
     "@creditkarma/dynamic-config": "^0.5.2",
     "@creditkarma/thrift-client": "^0.6.5",
     "@creditkarma/thrift-server-core": "^0.6.5",
-    "@creditkarma/thrift-server-express": "^0.6.5"
+    "@creditkarma/thrift-server-express": "^0.6.5",
+    "@nestjs/common": "^7.0.0",
+    "@nestjs/core": "^7.0.0",
+    "@nestjs/graphql": "^7.4.1",
+    "@nestjs/platform-express": "^7.0.0",
+    "apollo-server-express": "^2.14.1",
+    "graphql": "^15.0.0",
+    "graphql-tools": "^6.0.7",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "rxjs": "^6.5.4"
   },
   "devDependencies": {
     "@creditkarma/thrift-typescript": "^1.1.5",

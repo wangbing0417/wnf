@@ -42,7 +42,7 @@
   dependencies:
     "@babel/highlight" "^7.10.1"
 
-"@babel/core@^7.1.0", "@babel/core@^7.7.5":
+"@babel/core@^7.0.0", "@babel/core@^7.1.0", "@babel/core@^7.7.5":
   version "7.10.2"
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/core/download/@babel/core-7.10.2.tgz#bd6786046668a925ac2bd2fd95b579b92a23b36a"
   integrity sha1-vWeGBGZoqSWsK9L9lbV5uSojs2o=
@@ -64,7 +64,7 @@
     semver "^5.4.1"
     source-map "^0.5.0"
 
-"@babel/generator@^7.10.1", "@babel/generator@^7.10.2":
+"@babel/generator@^7.10.1", "@babel/generator@^7.10.2", "@babel/generator@^7.5.0":
   version "7.10.2"
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/generator/download/@babel/generator-7.10.2.tgz#0fa5b5b2389db8bfdfcc3492b551ee20f5dd69a9"
   integrity sha1-D6W1sjiduL/fzDSStVHuIPXdaak=
@@ -73,6 +73,51 @@
     jsesc "^2.5.1"
     lodash "^4.17.13"
     source-map "^0.5.0"
+
+"@babel/helper-annotate-as-pure@^7.10.1":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/helper-annotate-as-pure/download/@babel/helper-annotate-as-pure-7.10.1.tgz#f6d08acc6f70bbd59b436262553fb2e259a1a268"
+  integrity sha1-9tCKzG9wu9WbQ2JiVT+y4lmhomg=
+  dependencies:
+    "@babel/types" "^7.10.1"
+
+"@babel/helper-builder-react-jsx-experimental@^7.10.1":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/helper-builder-react-jsx-experimental/download/@babel/helper-builder-react-jsx-experimental-7.10.1.tgz#9a7d58ad184d3ac3bafb1a452cec2bad7e4a0bc8"
+  integrity sha1-mn1YrRhNOsO6+xpFLOwrrX5KC8g=
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.10.1"
+    "@babel/helper-module-imports" "^7.10.1"
+    "@babel/types" "^7.10.1"
+
+"@babel/helper-builder-react-jsx@^7.10.1":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/helper-builder-react-jsx/download/@babel/helper-builder-react-jsx-7.10.1.tgz#a327f0cf983af5554701b1215de54a019f09b532"
+  integrity sha1-oyfwz5g69VVHAbEhXeVKAZ8JtTI=
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.10.1"
+    "@babel/types" "^7.10.1"
+
+"@babel/helper-create-class-features-plugin@^7.10.1":
+  version "7.10.2"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/helper-create-class-features-plugin/download/@babel/helper-create-class-features-plugin-7.10.2.tgz#7474295770f217dbcf288bf7572eb213db46ee67"
+  integrity sha1-dHQpV3DyF9vPKIv3Vy6yE9tG7mc=
+  dependencies:
+    "@babel/helper-function-name" "^7.10.1"
+    "@babel/helper-member-expression-to-functions" "^7.10.1"
+    "@babel/helper-optimise-call-expression" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
+    "@babel/helper-replace-supers" "^7.10.1"
+    "@babel/helper-split-export-declaration" "^7.10.1"
+
+"@babel/helper-define-map@^7.10.1":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/helper-define-map/download/@babel/helper-define-map-7.10.1.tgz#5e69ee8308648470dd7900d159c044c10285221d"
+  integrity sha1-XmnugwhkhHDdeQDRWcBEwQKFIh0=
+  dependencies:
+    "@babel/helper-function-name" "^7.10.1"
+    "@babel/types" "^7.10.1"
+    lodash "^4.17.13"
 
 "@babel/helper-function-name@^7.10.1":
   version "7.10.1"
@@ -177,10 +222,27 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.10.1", "@babel/parser@^7.10.2":
+"@babel/parser@7.10.2", "@babel/parser@^7.0.0", "@babel/parser@^7.1.0", "@babel/parser@^7.10.1", "@babel/parser@^7.10.2":
   version "7.10.2"
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/parser/download/@babel/parser-7.10.2.tgz#871807f10442b92ff97e4783b9b54f6a0ca812d0"
   integrity sha1-hxgH8QRCuS/5fkeDubVPagyoEtA=
+
+"@babel/plugin-proposal-class-properties@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-proposal-class-properties/download/@babel/plugin-proposal-class-properties-7.10.1.tgz#046bc7f6550bb08d9bd1d4f060f5f5a4f1087e01"
+  integrity sha1-BGvH9lULsI2b0dTwYPX1pPEIfgE=
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-proposal-object-rest-spread@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-proposal-object-rest-spread/download/@babel/plugin-proposal-object-rest-spread-7.10.1.tgz#cba44908ac9f142650b4a65b8aa06bf3478d5fb6"
+  integrity sha1-y6RJCKyfFCZQtKZbiqBr80eNX7Y=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+    "@babel/plugin-syntax-object-rest-spread" "^7.8.0"
+    "@babel/plugin-transform-parameters" "^7.10.1"
 
 "@babel/plugin-syntax-async-generators@^7.8.4":
   version "7.8.4"
@@ -196,10 +258,17 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.0"
 
-"@babel/plugin-syntax-class-properties@^7.8.3":
+"@babel/plugin-syntax-class-properties@^7.0.0", "@babel/plugin-syntax-class-properties@^7.8.3":
   version "7.10.1"
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-syntax-class-properties/download/@babel/plugin-syntax-class-properties-7.10.1.tgz#d5bc0645913df5b17ad7eda0fa2308330bde34c5"
   integrity sha1-1bwGRZE99bF61+2g+iMIMwveNMU=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-syntax-flow@^7.0.0", "@babel/plugin-syntax-flow@^7.10.1":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-syntax-flow/download/@babel/plugin-syntax-flow-7.10.1.tgz#cd4bbca62fb402babacb174f64f8734310d742f0"
+  integrity sha1-zUu8pi+0Arq6yxdPZPhzQxDXQvA=
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.1"
 
@@ -209,6 +278,13 @@
   integrity sha1-AcohtmjNghjJ5kDLbdiMVBKyyWo=
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.0"
+
+"@babel/plugin-syntax-jsx@^7.0.0", "@babel/plugin-syntax-jsx@^7.10.1":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-syntax-jsx/download/@babel/plugin-syntax-jsx-7.10.1.tgz#0ae371134a42b91d5418feb3c8c8d43e1565d2da"
+  integrity sha1-CuNxE0pCuR1UGP6zyMjUPhVl0to=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
 
 "@babel/plugin-syntax-logical-assignment-operators@^7.8.3":
   version "7.10.1"
@@ -231,7 +307,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.1"
 
-"@babel/plugin-syntax-object-rest-spread@^7.8.3":
+"@babel/plugin-syntax-object-rest-spread@^7.0.0", "@babel/plugin-syntax-object-rest-spread@^7.8.0", "@babel/plugin-syntax-object-rest-spread@^7.8.3":
   version "7.8.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-syntax-object-rest-spread/download/@babel/plugin-syntax-object-rest-spread-7.8.3.tgz#60e225edcbd98a640332a2e72dd3e66f1af55871"
   integrity sha1-YOIl7cvZimQDMqLnLdPmbxr1WHE=
@@ -252,6 +328,172 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.0"
 
+"@babel/plugin-transform-arrow-functions@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-arrow-functions/download/@babel/plugin-transform-arrow-functions-7.10.1.tgz#cb5ee3a36f0863c06ead0b409b4cc43a889b295b"
+  integrity sha1-y17jo28IY8BurQtAm0zEOoibKVs=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-block-scoped-functions@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-block-scoped-functions/download/@babel/plugin-transform-block-scoped-functions-7.10.1.tgz#146856e756d54b20fff14b819456b3e01820b85d"
+  integrity sha1-FGhW51bVSyD/8UuBlFaz4BgguF0=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-block-scoping@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-block-scoping/download/@babel/plugin-transform-block-scoping-7.10.1.tgz#47092d89ca345811451cd0dc5d91605982705d5e"
+  integrity sha1-Rwktico0WBFFHNDcXZFgWYJwXV4=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+    lodash "^4.17.13"
+
+"@babel/plugin-transform-classes@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-classes/download/@babel/plugin-transform-classes-7.10.1.tgz#6e11dd6c4dfae70f540480a4702477ed766d733f"
+  integrity sha1-bhHdbE365w9UBICkcCR37XZtcz8=
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.10.1"
+    "@babel/helper-define-map" "^7.10.1"
+    "@babel/helper-function-name" "^7.10.1"
+    "@babel/helper-optimise-call-expression" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
+    "@babel/helper-replace-supers" "^7.10.1"
+    "@babel/helper-split-export-declaration" "^7.10.1"
+    globals "^11.1.0"
+
+"@babel/plugin-transform-computed-properties@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-computed-properties/download/@babel/plugin-transform-computed-properties-7.10.1.tgz#59aa399064429d64dce5cf76ef9b90b7245ebd07"
+  integrity sha1-Wao5kGRCnWTc5c9275uQtyRevQc=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-destructuring@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-destructuring/download/@babel/plugin-transform-destructuring-7.10.1.tgz#abd58e51337815ca3a22a336b85f62b998e71907"
+  integrity sha1-q9WOUTN4Fco6IqM2uF9iuZjnGQc=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-flow-strip-types@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-flow-strip-types/download/@babel/plugin-transform-flow-strip-types-7.10.1.tgz#59eafbff9ae85ec8932d4c16c068654be814ec5e"
+  integrity sha1-Wer7/5roXsiTLUwWwGhlS+gU7F4=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+    "@babel/plugin-syntax-flow" "^7.10.1"
+
+"@babel/plugin-transform-for-of@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-for-of/download/@babel/plugin-transform-for-of-7.10.1.tgz#ff01119784eb0ee32258e8646157ba2501fcfda5"
+  integrity sha1-/wERl4TrDuMiWOhkYVe6JQH8/aU=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-function-name@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-function-name/download/@babel/plugin-transform-function-name-7.10.1.tgz#4ed46fd6e1d8fde2a2ec7b03c66d853d2c92427d"
+  integrity sha1-TtRv1uHY/eKi7HsDxm2FPSySQn0=
+  dependencies:
+    "@babel/helper-function-name" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-literals@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-literals/download/@babel/plugin-transform-literals-7.10.1.tgz#5794f8da82846b22e4e6631ea1658bce708eb46a"
+  integrity sha1-V5T42oKEayLk5mMeoWWLznCOtGo=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-member-expression-literals@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-member-expression-literals/download/@babel/plugin-transform-member-expression-literals-7.10.1.tgz#90347cba31bca6f394b3f7bd95d2bbfd9fce2f39"
+  integrity sha1-kDR8ujG8pvOUs/e9ldK7/Z/OLzk=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-modules-commonjs@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-modules-commonjs/download/@babel/plugin-transform-modules-commonjs-7.10.1.tgz#d5ff4b4413ed97ffded99961056e1fb980fb9301"
+  integrity sha1-1f9LRBPtl//e2ZlhBW4fuYD7kwE=
+  dependencies:
+    "@babel/helper-module-transforms" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
+    "@babel/helper-simple-access" "^7.10.1"
+    babel-plugin-dynamic-import-node "^2.3.3"
+
+"@babel/plugin-transform-object-super@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-object-super/download/@babel/plugin-transform-object-super-7.10.1.tgz#2e3016b0adbf262983bf0d5121d676a5ed9c4fde"
+  integrity sha1-LjAWsK2/JimDvw1RIdZ2pe2cT94=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+    "@babel/helper-replace-supers" "^7.10.1"
+
+"@babel/plugin-transform-parameters@^7.0.0", "@babel/plugin-transform-parameters@^7.10.1":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-parameters/download/@babel/plugin-transform-parameters-7.10.1.tgz#b25938a3c5fae0354144a720b07b32766f683ddd"
+  integrity sha1-slk4o8X64DVBRKcgsHsydm9oPd0=
+  dependencies:
+    "@babel/helper-get-function-arity" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-property-literals@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-property-literals/download/@babel/plugin-transform-property-literals-7.10.1.tgz#cffc7315219230ed81dc53e4625bf86815b6050d"
+  integrity sha1-z/xzFSGSMO2B3FPkYlv4aBW2BQ0=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-react-display-name@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-react-display-name/download/@babel/plugin-transform-react-display-name-7.10.1.tgz#e6a33f6d48dfb213dda5e007d0c7ff82b6a3d8ef"
+  integrity sha1-5qM/bUjfshPdpeAH0Mf/graj2O8=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-react-jsx@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-react-jsx/download/@babel/plugin-transform-react-jsx-7.10.1.tgz#91f544248ba131486decb5d9806da6a6e19a2896"
+  integrity sha1-kfVEJIuhMUht7LXZgG2mpuGaKJY=
+  dependencies:
+    "@babel/helper-builder-react-jsx" "^7.10.1"
+    "@babel/helper-builder-react-jsx-experimental" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
+    "@babel/plugin-syntax-jsx" "^7.10.1"
+
+"@babel/plugin-transform-shorthand-properties@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-shorthand-properties/download/@babel/plugin-transform-shorthand-properties-7.10.1.tgz#e8b54f238a1ccbae482c4dce946180ae7b3143f3"
+  integrity sha1-6LVPI4ocy65ILE3OlGGArnsxQ/M=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-spread@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-spread/download/@babel/plugin-transform-spread-7.10.1.tgz#0c6d618a0c4461a274418460a28c9ccf5239a7c8"
+  integrity sha1-DG1higxEYaJ0QYRgooycz1I5p8g=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/plugin-transform-template-literals@^7.0.0":
+  version "7.10.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/plugin-transform-template-literals/download/@babel/plugin-transform-template-literals-7.10.1.tgz#914c7b7f4752c570ea00553b4284dad8070e8628"
+  integrity sha1-kUx7f0dSxXDqAFU7QoTa2AcOhig=
+  dependencies:
+    "@babel/helper-annotate-as-pure" "^7.10.1"
+    "@babel/helper-plugin-utils" "^7.10.1"
+
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.9.2":
+  version "7.10.2"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@babel/runtime/download/@babel/runtime-7.10.2.tgz#d103f21f2602497d38348a32e008637d506db839"
+  integrity sha1-0QPyHyYCSX04NIoy4AhjfVBtuDk=
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.10.1", "@babel/template@^7.3.3":
   version "7.10.1"
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/template/download/@babel/template-7.10.1.tgz#e167154a94cb5f14b28dc58f5356d2162f539811"
@@ -261,7 +503,7 @@
     "@babel/parser" "^7.10.1"
     "@babel/types" "^7.10.1"
 
-"@babel/traverse@^7.1.0", "@babel/traverse@^7.10.1":
+"@babel/traverse@7.10.1", "@babel/traverse@^7.0.0", "@babel/traverse@^7.1.0", "@babel/traverse@^7.10.1":
   version "7.10.1"
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/traverse/download/@babel/traverse-7.10.1.tgz#bbcef3031e4152a6c0b50147f4958df54ca0dd27"
   integrity sha1-u87zAx5BUqbAtQFH9JWN9Uyg3Sc=
@@ -276,7 +518,7 @@
     globals "^11.1.0"
     lodash "^4.17.13"
 
-"@babel/types@^7.0.0", "@babel/types@^7.10.1", "@babel/types@^7.10.2", "@babel/types@^7.3.0", "@babel/types@^7.3.3":
+"@babel/types@7.10.2", "@babel/types@^7.0.0", "@babel/types@^7.10.1", "@babel/types@^7.10.2", "@babel/types@^7.3.0", "@babel/types@^7.3.3":
   version "7.10.2"
   resolved "http://npm.devops.xiaohongshu.com:7001/@babel/types/download/@babel/types-7.10.2.tgz#30283be31cad0dbf6fb00bd40641ca0ea675172d"
   integrity sha1-MCg74xytDb9vsAvUBkHKDqZ1Fy0=
@@ -572,6 +814,210 @@
     unique-filename "^1.1.1"
     which "^1.3.1"
 
+"@graphql-tools/code-file-loader@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/code-file-loader/download/@graphql-tools/code-file-loader-6.0.7.tgz#2e0644a621f2ab16cd902172eaee580debc879d0"
+  integrity sha1-LgZEpiHyqxbNkCFy6u5YDevIedA=
+  dependencies:
+    "@graphql-tools/graphql-tag-pluck" "6.0.7"
+    "@graphql-tools/utils" "6.0.7"
+    fs-extra "9.0.0"
+    tslib "~2.0.0"
+
+"@graphql-tools/delegate@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/delegate/download/@graphql-tools/delegate-6.0.7.tgz#71c92d349f6e5e0f8ac9a74f370d68243319476e"
+  integrity sha1-ccktNJ9uXg+KyadPNw1oJDMZR24=
+  dependencies:
+    "@graphql-tools/schema" "6.0.7"
+    "@graphql-tools/utils" "6.0.7"
+    tslib "~2.0.0"
+
+"@graphql-tools/git-loader@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/git-loader/download/@graphql-tools/git-loader-6.0.7.tgz#9148efab90c3c74d5483a9bfaf1242269aa30f67"
+  integrity sha1-kUjvq5DDx01Ug6m/rxJCJpqjD2c=
+  dependencies:
+    "@graphql-tools/graphql-tag-pluck" "6.0.7"
+    "@graphql-tools/utils" "6.0.7"
+    simple-git "2.5.0"
+
+"@graphql-tools/github-loader@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/github-loader/download/@graphql-tools/github-loader-6.0.7.tgz#df7667c5f078dd3c1bb60753cd7f73ee1c16d5d7"
+  integrity sha1-33ZnxfB43TwbtgdTzX9z7hwW1dc=
+  dependencies:
+    "@graphql-tools/graphql-tag-pluck" "6.0.7"
+    "@graphql-tools/utils" "6.0.7"
+    cross-fetch "3.0.4"
+
+"@graphql-tools/graphql-file-loader@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/graphql-file-loader/download/@graphql-tools/graphql-file-loader-6.0.7.tgz#581af2ecbeda1311a85d0b0c32c6470073ad0aee"
+  integrity sha1-WBry7L7aExGoXQsMMsZHAHOtCu4=
+  dependencies:
+    "@graphql-tools/import" "6.0.7"
+    "@graphql-tools/utils" "6.0.7"
+    fs-extra "9.0.0"
+    tslib "~2.0.0"
+
+"@graphql-tools/graphql-tag-pluck@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/graphql-tag-pluck/download/@graphql-tools/graphql-tag-pluck-6.0.7.tgz#beac82beda73b550130940bdee9fcdfd9503ddde"
+  integrity sha1-vqyCvtpztVATCUC97p/N/ZUD3d4=
+  dependencies:
+    "@babel/parser" "7.10.2"
+    "@babel/traverse" "7.10.1"
+    "@babel/types" "7.10.2"
+    "@graphql-tools/utils" "6.0.7"
+  optionalDependencies:
+    vue-template-compiler "^2.6.11"
+
+"@graphql-tools/import@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/import/download/@graphql-tools/import-6.0.7.tgz#a226e0e44fbc355fc988a66092bb0585faa1e12b"
+  integrity sha1-oibg5E+8NV/JiKZgkrsFhfqh4Ss=
+  dependencies:
+    fs-extra "9.0.0"
+    resolve-from "5.0.0"
+
+"@graphql-tools/json-file-loader@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/json-file-loader/download/@graphql-tools/json-file-loader-6.0.7.tgz#876461cc1802ad2a1e58becda3a52216dad85f64"
+  integrity sha1-h2RhzBgCrSoeWL7No6UiFtrYX2Q=
+  dependencies:
+    "@graphql-tools/utils" "6.0.7"
+    fs-extra "9.0.0"
+    tslib "~2.0.0"
+
+"@graphql-tools/links@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/links/download/@graphql-tools/links-6.0.7.tgz#9653e2d3daec51467268fd0f16754d63f4a6da74"
+  integrity sha1-llPi09rsUUZyaP0PFnVNY/Sm2nQ=
+  dependencies:
+    "@graphql-tools/utils" "6.0.7"
+    apollo-link "1.2.14"
+    apollo-upload-client "13.0.0"
+    cross-fetch "3.0.4"
+    form-data "3.0.0"
+    tslib "~2.0.0"
+
+"@graphql-tools/load-files@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/load-files/download/@graphql-tools/load-files-6.0.7.tgz#e3514453a3672fa930635bd80e7d0d397bbe78a2"
+  integrity sha1-41FEU6NnL6kwY1vYDn0NOXu+eKI=
+  dependencies:
+    fs-extra "9.0.0"
+    globby "11.0.1"
+    unixify "1.0.0"
+
+"@graphql-tools/load@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/load/download/@graphql-tools/load-6.0.7.tgz#77c739f5e8b3f644f7e7343307743cd9487e3bed"
+  integrity sha1-d8c59eiz9kT35zQzB3Q82Uh+O+0=
+  dependencies:
+    "@graphql-tools/merge" "6.0.7"
+    "@graphql-tools/utils" "6.0.7"
+    globby "11.0.1"
+    import-from "3.0.0"
+    is-glob "4.0.1"
+    p-limit "2.3.0"
+    tslib "~2.0.0"
+    unixify "1.0.0"
+    valid-url "1.0.9"
+
+"@graphql-tools/merge@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/merge/download/@graphql-tools/merge-6.0.7.tgz#51e501f1981a0526486cf72ef74dac055b2eb222"
+  integrity sha1-UeUB8ZgaBSZIbPcu902sBVsusiI=
+  dependencies:
+    "@graphql-tools/schema" "6.0.7"
+    "@graphql-tools/utils" "6.0.7"
+    tslib "~2.0.0"
+
+"@graphql-tools/mock@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/mock/download/@graphql-tools/mock-6.0.7.tgz#6f8438abbab0d1e5a99a2bd4b64b8a05a9649137"
+  integrity sha1-b4Q4q7qw0eWpmivUtkuKBalkkTc=
+  dependencies:
+    "@graphql-tools/schema" "6.0.7"
+    "@graphql-tools/utils" "6.0.7"
+    tslib "~2.0.0"
+
+"@graphql-tools/module-loader@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/module-loader/download/@graphql-tools/module-loader-6.0.7.tgz#d55e49ee583308389251a3d0326566e934f3b86d"
+  integrity sha1-1V5J7lgzCDiSUaPQMmVm6TTzuG0=
+  dependencies:
+    "@graphql-tools/utils" "6.0.7"
+    tslib "~2.0.0"
+
+"@graphql-tools/relay-operation-optimizer@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/relay-operation-optimizer/download/@graphql-tools/relay-operation-optimizer-6.0.7.tgz#d9f6a493622bacf00e1fc466b4969316d5a3f67e"
+  integrity sha1-2fakk2IrrPAOH8RmtJaTFtWj9n4=
+  dependencies:
+    "@graphql-tools/utils" "6.0.7"
+    relay-compiler "9.1.0"
+
+"@graphql-tools/resolvers-composition@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/resolvers-composition/download/@graphql-tools/resolvers-composition-6.0.7.tgz#0c01acd7d9e5a5cc6f5a451ca6e9e54fb09ed01a"
+  integrity sha1-DAGs19nlpcxvWkUcpunlT7Ce0Bo=
+  dependencies:
+    "@graphql-tools/utils" "6.0.7"
+    lodash "4.17.15"
+
+"@graphql-tools/schema@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/schema/download/@graphql-tools/schema-6.0.7.tgz#53549f29b626b2d0657a8ce2e9c4edecc249e815"
+  integrity sha1-U1SfKbYmstBleozi6cTt7MJJ6BU=
+  dependencies:
+    "@graphql-tools/utils" "6.0.7"
+    tslib "~2.0.0"
+
+"@graphql-tools/stitch@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/stitch/download/@graphql-tools/stitch-6.0.7.tgz#45d381bf0fd9ccec8a595260435d3280b62877e1"
+  integrity sha1-RdOBvw/ZzOyKWVJgQ10ygLYod+E=
+  dependencies:
+    "@graphql-tools/delegate" "6.0.7"
+    "@graphql-tools/schema" "6.0.7"
+    "@graphql-tools/utils" "6.0.7"
+    "@graphql-tools/wrap" "6.0.7"
+    tslib "~2.0.0"
+
+"@graphql-tools/url-loader@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/url-loader/download/@graphql-tools/url-loader-6.0.7.tgz#0357e760797a72d2b471fcf55fbc79bb6442c05d"
+  integrity sha1-A1fnYHl6ctK0cfz1X7x5u2RCwF0=
+  dependencies:
+    "@graphql-tools/utils" "6.0.7"
+    "@graphql-tools/wrap" "6.0.7"
+    "@types/websocket" "1.0.0"
+    cross-fetch "3.0.4"
+    subscriptions-transport-ws "0.9.16"
+    tslib "~2.0.0"
+    valid-url "1.0.9"
+    websocket "1.0.31"
+
+"@graphql-tools/utils@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/utils/download/@graphql-tools/utils-6.0.7.tgz#0dc8837988b04961162bb76741bfa1072a03418c"
+  integrity sha1-DciDeYiwSWEWK7dnQb+hByoDQYw=
+  dependencies:
+    camel-case "4.1.1"
+
+"@graphql-tools/wrap@6.0.7":
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@graphql-tools/wrap/download/@graphql-tools/wrap-6.0.7.tgz#d35d8c67a447d08eb4623b1393230011428dfa43"
+  integrity sha1-012MZ6RH0I60YjsTkyMAEUKN+kM=
+  dependencies:
+    "@graphql-tools/delegate" "6.0.7"
+    "@graphql-tools/schema" "6.0.7"
+    "@graphql-tools/utils" "6.0.7"
+    tslib "~2.0.0"
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/@istanbuljs/load-nyc-config/download/@istanbuljs/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -763,6 +1209,11 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
+
+"@kwsites/exec-p@^0.4.0":
+  version "0.4.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@kwsites/exec-p/download/@kwsites/exec-p-0.4.0.tgz#ab3765d482849ba6e825721077c248cf9f3323b7"
+  integrity sha1-qzdl1IKEm6boJXIQd8JIz58zI7c=
 
 "@lerna/add@3.21.0":
   version "3.21.0"
@@ -1546,10 +1997,31 @@
     optional "0.1.4"
     tslib "2.0.0"
 
+"@nodelib/fs.scandir@2.1.3":
+  version "2.1.3"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.3.tgz#3a582bdb53804c6ba6d146579c46e52130cf4a3b"
+  integrity sha1-Olgr21OATGum0UZXnEblITDPSjs=
+  dependencies:
+    "@nodelib/fs.stat" "2.0.3"
+    run-parallel "^1.1.9"
+
+"@nodelib/fs.stat@2.0.3", "@nodelib/fs.stat@^2.0.2":
+  version "2.0.3"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@nodelib/fs.stat/download/@nodelib/fs.stat-2.0.3.tgz#34dc5f4cabbc720f4e60f75a747e7ecd6c175bd3"
+  integrity sha1-NNxfTKu8cg9OYPdadH5+zWwXW9M=
+
 "@nodelib/fs.stat@^1.1.2":
   version "1.1.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/@nodelib/fs.stat/download/@nodelib/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha1-K1o6s/kYzKSKjHVMCBaOPwPrphs=
+
+"@nodelib/fs.walk@^1.2.3":
+  version "1.2.4"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@nodelib/fs.walk/download/@nodelib/fs.walk-1.2.4.tgz#011b9202a70a6366e436ca5c065844528ab04976"
+  integrity sha1-ARuSAqcKY2bkNspcBlhEUoqwSXY=
+  dependencies:
+    "@nodelib/fs.scandir" "2.1.3"
+    fastq "^1.6.0"
 
 "@nuxtjs/opencollective@0.2.2":
   version "0.2.2"
@@ -2019,6 +2491,13 @@
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
 
+"@types/websocket@1.0.0":
+  version "1.0.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@types/websocket/download/@types/websocket-1.0.0.tgz#828c794b0a50949ad061aa311af1009934197e4b"
+  integrity sha1-gox5SwpQlJrQYaoxGvEAmTQZfks=
+  dependencies:
+    "@types/node" "*"
+
 "@types/yamljs@^0.2.30":
   version "0.2.31"
   resolved "http://npm.devops.xiaohongshu.com:7001/@types/yamljs/download/@types/yamljs-0.2.31.tgz#b1a620b115c96db7b3bfdf0cf54aee0c57139245"
@@ -2268,6 +2747,13 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
+"@wry/equality@^0.1.2":
+  version "0.1.11"
+  resolved "http://npm.devops.xiaohongshu.com:7001/@wry/equality/download/@wry/equality-0.1.11.tgz#35cb156e4a96695aa81a9ecc4d03787bc17f1790"
+  integrity sha1-NcsVbkqWaVqoGp7MTQN4e8F/F5A=
+  dependencies:
+    tslib "^1.9.3"
+
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/@xtuc/ieee754/download/@xtuc/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"
@@ -2475,6 +2961,45 @@ anymatch@^3.0.3, anymatch@~3.1.1:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+apollo-link-http-common@^0.2.14:
+  version "0.2.16"
+  resolved "http://npm.devops.xiaohongshu.com:7001/apollo-link-http-common/download/apollo-link-http-common-0.2.16.tgz#756749dafc732792c8ca0923f9a40564b7c59ecc"
+  integrity sha1-dWdJ2vxzJ5LIygkj+aQFZLfFnsw=
+  dependencies:
+    apollo-link "^1.2.14"
+    ts-invariant "^0.4.0"
+    tslib "^1.9.3"
+
+apollo-link@1.2.14, apollo-link@^1.2.12, apollo-link@^1.2.14:
+  version "1.2.14"
+  resolved "http://npm.devops.xiaohongshu.com:7001/apollo-link/download/apollo-link-1.2.14.tgz#3feda4b47f9ebba7f4160bef8b977ba725b684d9"
+  integrity sha1-P+2ktH+eu6f0Fgvvi5d7pyW2hNk=
+  dependencies:
+    apollo-utilities "^1.3.0"
+    ts-invariant "^0.4.0"
+    tslib "^1.9.3"
+    zen-observable-ts "^0.8.21"
+
+apollo-upload-client@13.0.0:
+  version "13.0.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/apollo-upload-client/download/apollo-upload-client-13.0.0.tgz#146d1ddd85d711fcac8ca97a72d3ca6787f2b71b"
+  integrity sha1-FG0d3YXXEfysjKl6ctPKZ4fytxs=
+  dependencies:
+    "@babel/runtime" "^7.9.2"
+    apollo-link "^1.2.12"
+    apollo-link-http-common "^0.2.14"
+    extract-files "^8.0.0"
+
+apollo-utilities@^1.3.0:
+  version "1.3.4"
+  resolved "http://npm.devops.xiaohongshu.com:7001/apollo-utilities/download/apollo-utilities-1.3.4.tgz#6129e438e8be201b6c55b0f13ce49d2c7175c9cf"
+  integrity sha1-YSnkOOi+IBtsVbDxPOSdLHF1yc8=
+  dependencies:
+    "@wry/equality" "^0.1.2"
+    fast-json-stable-stringify "^2.0.0"
+    ts-invariant "^0.4.0"
+    tslib "^1.10.0"
+
 append-field@^1.0.0:
   version "1.0.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/append-field/download/append-field-1.0.0.tgz#1e3440e915f0b1203d23748e78edd7b9b5b43e56"
@@ -2561,6 +3086,11 @@ array-union@^1.0.2:
   dependencies:
     array-uniq "^1.0.1"
 
+array-union@^2.1.0:
+  version "2.1.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/array-union/download/array-union-2.1.0.tgz#b798420adbeb1de828d84acd8a2e23d3efe85e8d"
+  integrity sha1-t5hCCtvrHego2ErNii4j0+/oXo0=
+
 array-uniq@^1.0.1:
   version "1.0.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/array-uniq/download/array-uniq-1.0.3.tgz#af6ac877a25cc7f74e058894753858dfdb24fdb6"
@@ -2638,6 +3168,11 @@ async-each@^1.0.1:
   resolved "http://npm.devops.xiaohongshu.com:7001/async-each/download/async-each-1.0.3.tgz#b727dbf87d7651602f06f4d4ac387f47d91b0cbf"
   integrity sha1-tyfb+H12UWAvBvTUrDh/R9kbDL8=
 
+async-limiter@~1.0.0:
+  version "1.0.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/async-limiter/download/async-limiter-1.0.1.tgz#dd379e94f0db8310b08291f9d64c3209766617fd"
+  integrity sha1-3TeelPDbgxCwgpH51kwyCXZmF/0=
+
 async@~1.0.0:
   version "1.0.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/async/download/async-1.0.0.tgz#f8fc04ca3a13784ade9e1641af98578cfbd647a9"
@@ -2694,6 +3229,13 @@ babel-jest@^26.0.1:
     graceful-fs "^4.2.4"
     slash "^3.0.0"
 
+babel-plugin-dynamic-import-node@^2.3.3:
+  version "2.3.3"
+  resolved "http://npm.devops.xiaohongshu.com:7001/babel-plugin-dynamic-import-node/download/babel-plugin-dynamic-import-node-2.3.3.tgz#84fda19c976ec5c6defef57f9427b3def66e17a3"
+  integrity sha1-hP2hnJduxcbe/vV/lCez3vZuF6M=
+  dependencies:
+    object.assign "^4.1.0"
+
 babel-plugin-istanbul@^6.0.0:
   version "6.0.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/babel-plugin-istanbul/download/babel-plugin-istanbul-6.0.0.tgz#e159ccdc9af95e0b570c75b4573b7c34d671d765"
@@ -2713,6 +3255,11 @@ babel-plugin-jest-hoist@^26.0.0:
     "@babel/template" "^7.3.3"
     "@babel/types" "^7.3.3"
     "@types/babel__traverse" "^7.0.6"
+
+babel-plugin-syntax-trailing-function-commas@^7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/babel-plugin-syntax-trailing-function-commas/download/babel-plugin-syntax-trailing-function-commas-7.0.0-beta.0.tgz#aa213c1435e2bffeb6fca842287ef534ad05d5cf"
+  integrity sha1-qiE8FDXiv/62/KhCKH71NK0F1c8=
 
 babel-polyfill@6.26.0:
   version "6.26.0"
@@ -2739,6 +3286,39 @@ babel-preset-current-node-syntax@^0.1.2:
     "@babel/plugin-syntax-optional-catch-binding" "^7.8.3"
     "@babel/plugin-syntax-optional-chaining" "^7.8.3"
 
+babel-preset-fbjs@^3.3.0:
+  version "3.3.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/babel-preset-fbjs/download/babel-preset-fbjs-3.3.0.tgz#a6024764ea86c8e06a22d794ca8b69534d263541"
+  integrity sha1-pgJHZOqGyOBqIteUyotpU00mNUE=
+  dependencies:
+    "@babel/plugin-proposal-class-properties" "^7.0.0"
+    "@babel/plugin-proposal-object-rest-spread" "^7.0.0"
+    "@babel/plugin-syntax-class-properties" "^7.0.0"
+    "@babel/plugin-syntax-flow" "^7.0.0"
+    "@babel/plugin-syntax-jsx" "^7.0.0"
+    "@babel/plugin-syntax-object-rest-spread" "^7.0.0"
+    "@babel/plugin-transform-arrow-functions" "^7.0.0"
+    "@babel/plugin-transform-block-scoped-functions" "^7.0.0"
+    "@babel/plugin-transform-block-scoping" "^7.0.0"
+    "@babel/plugin-transform-classes" "^7.0.0"
+    "@babel/plugin-transform-computed-properties" "^7.0.0"
+    "@babel/plugin-transform-destructuring" "^7.0.0"
+    "@babel/plugin-transform-flow-strip-types" "^7.0.0"
+    "@babel/plugin-transform-for-of" "^7.0.0"
+    "@babel/plugin-transform-function-name" "^7.0.0"
+    "@babel/plugin-transform-literals" "^7.0.0"
+    "@babel/plugin-transform-member-expression-literals" "^7.0.0"
+    "@babel/plugin-transform-modules-commonjs" "^7.0.0"
+    "@babel/plugin-transform-object-super" "^7.0.0"
+    "@babel/plugin-transform-parameters" "^7.0.0"
+    "@babel/plugin-transform-property-literals" "^7.0.0"
+    "@babel/plugin-transform-react-display-name" "^7.0.0"
+    "@babel/plugin-transform-react-jsx" "^7.0.0"
+    "@babel/plugin-transform-shorthand-properties" "^7.0.0"
+    "@babel/plugin-transform-spread" "^7.0.0"
+    "@babel/plugin-transform-template-literals" "^7.0.0"
+    babel-plugin-syntax-trailing-function-commas "^7.0.0-beta.0"
+
 babel-preset-jest@^26.0.0:
   version "26.0.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/babel-preset-jest/download/babel-preset-jest-26.0.0.tgz#1eac82f513ad36c4db2e9263d7c485c825b1faa6"
@@ -2754,6 +3334,11 @@ babel-runtime@^6.23.0, babel-runtime@^6.26.0:
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.11.0"
+
+backo2@^1.0.2:
+  version "1.0.2"
+  resolved "http://npm.devops.xiaohongshu.com:7001/backo2/download/backo2-1.0.2.tgz#31ab1ac8b129363463e35b3ebb69f4dfcfba7947"
+  integrity sha1-MasayLEpNjRj41s+u2n038+6eUc=
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -3093,6 +3678,14 @@ callsites@^3.0.0:
   resolved "http://npm.devops.xiaohongshu.com:7001/callsites/download/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha1-s2MKvYlDQy9Us/BRkjjjPNffL3M=
 
+camel-case@4.1.1:
+  version "4.1.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/camel-case/download/camel-case-4.1.1.tgz#1fc41c854f00e2f7d0139dfeba1542d6896fe547"
+  integrity sha1-H8QchU8A4vfQE53+uhVC1olv5Uc=
+  dependencies:
+    pascal-case "^3.1.1"
+    tslib "^1.10.0"
+
 camelcase-keys@^2.0.0:
   version "2.1.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/camelcase-keys/download/camelcase-keys-2.1.0.tgz#308beeaffdf28119051efa1d932213c91b8f92e7"
@@ -3422,7 +4015,7 @@ columnify@^1.5.4:
     strip-ansi "^3.0.0"
     wcwidth "^1.0.0"
 
-combined-stream@^1.0.6, combined-stream@~1.0.6:
+combined-stream@^1.0.6, combined-stream@^1.0.8, combined-stream@~1.0.6:
   version "1.0.8"
   resolved "http://npm.devops.xiaohongshu.com:7001/combined-stream/download/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
   integrity sha1-w9RaizT9cwYxoRCoolIGgrMdWn8=
@@ -3709,7 +4302,7 @@ copy-descriptor@^0.1.0:
   resolved "http://npm.devops.xiaohongshu.com:7001/copy-descriptor/download/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
-core-js@^2.4.0, core-js@^2.5.0:
+core-js@^2.4.0, core-js@^2.4.1, core-js@^2.5.0:
   version "2.6.11"
   resolved "http://npm.devops.xiaohongshu.com:7001/core-js/download/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha1-OIMUafmSK97Y7iHJ3EaYXgOZMIw=
@@ -3778,6 +4371,14 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     ripemd160 "^2.0.0"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+cross-fetch@3.0.4:
+  version "3.0.4"
+  resolved "http://npm.devops.xiaohongshu.com:7001/cross-fetch/download/cross-fetch-3.0.4.tgz#7bef7020207e684a7638ef5f2f698e24d9eb283c"
+  integrity sha1-e+9wICB+aEp2OO9fL2mOJNnrKDw=
+  dependencies:
+    node-fetch "2.6.0"
+    whatwg-fetch "3.0.0"
 
 cross-spawn@^6.0.0:
   version "6.0.5"
@@ -3932,6 +4533,11 @@ dateformat@^3.0.0:
   version "3.0.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/dateformat/download/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
   integrity sha1-puN0maTZqc+F71hyBE1ikByYia4=
+
+de-indent@^1.0.2:
+  version "1.0.2"
+  resolved "http://npm.devops.xiaohongshu.com:7001/de-indent/download/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
+  integrity sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0=
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9:
   version "2.6.9"
@@ -4139,6 +4745,13 @@ dir-glob@^2.2.2:
   integrity sha1-+gnwaUFTyJGLGLoN6vrpR2n8UMQ=
   dependencies:
     path-type "^3.0.0"
+
+dir-glob@^3.0.1:
+  version "3.0.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/dir-glob/download/dir-glob-3.0.1.tgz#56dbf73d992a4a93ba1584f4534063fd2e41717f"
+  integrity sha1-Vtv3PZkqSpO6FYT0U0Bj/S5BcX8=
+  dependencies:
+    path-type "^4.0.0"
 
 doctrine@1.5.0:
   version "1.5.0"
@@ -4839,6 +5452,11 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+extract-files@^8.0.0:
+  version "8.1.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/extract-files/download/extract-files-8.1.0.tgz#46a0690d0fe77411a2e3804852adeaa65cd59288"
+  integrity sha1-RqBpDQ/ndBGi44BIUq3qplzVkog=
+
 extsprintf@1.3.0:
   version "1.3.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/extsprintf/download/extsprintf-1.3.0.tgz#96918440e3041a7a414f8c52e3c574eb3c3e1e05"
@@ -4859,7 +5477,7 @@ fast-deep-equal@^3.1.1:
   resolved "http://npm.devops.xiaohongshu.com:7001/fast-deep-equal/download/fast-deep-equal-3.1.1.tgz#545145077c501491e33b15ec408c294376e94ae4"
   integrity sha1-VFFFB3xQFJHjOxXsQIwpQ3bpSuQ=
 
-fast-glob@^2.2.6:
+fast-glob@^2.2.2, fast-glob@^2.2.6:
   version "2.2.7"
   resolved "http://npm.devops.xiaohongshu.com:7001/fast-glob/download/fast-glob-2.2.7.tgz#6953857c3afa475fff92ee6015d52da70a4cd39d"
   integrity sha1-aVOFfDr6R1//ku5gFdUtpwpM050=
@@ -4870,6 +5488,18 @@ fast-glob@^2.2.6:
     is-glob "^4.0.0"
     merge2 "^1.2.3"
     micromatch "^3.1.10"
+
+fast-glob@^3.1.1:
+  version "3.2.2"
+  resolved "http://npm.devops.xiaohongshu.com:7001/fast-glob/download/fast-glob-3.2.2.tgz#ade1a9d91148965d4bf7c51f72e1ca662d32e63d"
+  integrity sha1-reGp2RFIll1L98UfcuHKZi0y5j0=
+  dependencies:
+    "@nodelib/fs.stat" "^2.0.2"
+    "@nodelib/fs.walk" "^1.2.3"
+    glob-parent "^5.1.0"
+    merge2 "^1.3.0"
+    micromatch "^4.0.2"
+    picomatch "^2.2.1"
 
 fast-json-stable-stringify@2.1.0, fast-json-stable-stringify@2.x, fast-json-stable-stringify@^2.0.0:
   version "2.1.0"
@@ -4886,12 +5516,38 @@ fast-safe-stringify@2.0.7:
   resolved "http://npm.devops.xiaohongshu.com:7001/fast-safe-stringify/download/fast-safe-stringify-2.0.7.tgz#124aa885899261f68aedb42a7c080de9da608743"
   integrity sha1-EkqohYmSYfaK7bQqfAgN6dpgh0M=
 
+fastq@^1.6.0:
+  version "1.8.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/fastq/download/fastq-1.8.0.tgz#550e1f9f59bbc65fe185cb6a9b4d95357107f481"
+  integrity sha1-VQ4fn1m7xl/hhctqm02VNXEH9IE=
+  dependencies:
+    reusify "^1.0.4"
+
 fb-watchman@^2.0.0:
   version "2.0.1"
   resolved "http://npm.devops.xiaohongshu.com:7001/fb-watchman/download/fb-watchman-2.0.1.tgz#fc84fb39d2709cf3ff6d743706157bb5708a8a85"
   integrity sha1-/IT7OdJwnPP/bXQ3BhV7tXCKioU=
   dependencies:
     bser "2.1.1"
+
+fbjs-css-vars@^1.0.0:
+  version "1.0.2"
+  resolved "http://npm.devops.xiaohongshu.com:7001/fbjs-css-vars/download/fbjs-css-vars-1.0.2.tgz#216551136ae02fe255932c3ec8775f18e2c078b8"
+  integrity sha1-IWVRE2rgL+JVkyw+yHdfGOLAeLg=
+
+fbjs@^1.0.0:
+  version "1.0.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/fbjs/download/fbjs-1.0.0.tgz#52c215e0883a3c86af2a7a776ed51525ae8e0a5a"
+  integrity sha1-UsIV4Ig6PIavKnp3btUVJa6OClo=
+  dependencies:
+    core-js "^2.4.1"
+    fbjs-css-vars "^1.0.0"
+    isomorphic-fetch "^2.1.1"
+    loose-envify "^1.0.0"
+    object-assign "^4.1.0"
+    promise "^7.1.1"
+    setimmediate "^1.0.5"
+    ua-parser-js "^0.7.18"
 
 figgy-pudding@^3.4.1, figgy-pudding@^3.5.1:
   version "3.5.2"
@@ -5089,6 +5745,15 @@ fork-ts-checker-webpack-plugin@4.1.4:
     semver "^5.6.0"
     tapable "^1.0.0"
     worker-rpc "^0.1.0"
+
+form-data@3.0.0:
+  version "3.0.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/form-data/download/form-data-3.0.0.tgz#31b7e39c85f1355b7139ee0c647cf0de7f83c682"
+  integrity sha1-MbfjnIXxNVtxOe4MZHzw3n+DxoI=
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
 
 form-data@^2.3.1, form-data@^2.5.0:
   version "2.5.1"
@@ -5371,7 +6036,7 @@ glob-parent@^3.1.0:
     is-glob "^3.1.0"
     path-dirname "^1.0.0"
 
-glob-parent@^5.0.0, glob-parent@~5.1.0:
+glob-parent@^5.0.0, glob-parent@^5.1.0, glob-parent@~5.1.0:
   version "5.1.1"
   resolved "http://npm.devops.xiaohongshu.com:7001/glob-parent/download/glob-parent-5.1.1.tgz#b6c1ef417c4e5663ea498f1c45afac6916bbc229"
   integrity sha1-tsHvQXxOVmPqSY8cRa+saRa7wik=
@@ -5446,6 +6111,18 @@ globals@^12.1.0:
   dependencies:
     type-fest "^0.8.1"
 
+globby@11.0.1:
+  version "11.0.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/globby/download/globby-11.0.1.tgz#9a2bf107a068f3ffeabc49ad702c79ede8cfd357"
+  integrity sha1-mivxB6Bo8//qvEmtcCx57ejP01c=
+  dependencies:
+    array-union "^2.1.0"
+    dir-glob "^3.0.1"
+    fast-glob "^3.1.1"
+    ignore "^5.1.4"
+    merge2 "^1.3.0"
+    slash "^3.0.0"
+
 globby@^9.2.0:
   version "9.2.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/globby/download/globby-9.2.0.tgz#fd029a706c703d29bdd170f4b6db3a3f7a7cb63d"
@@ -5464,6 +6141,38 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.3
   version "4.2.4"
   resolved "http://npm.devops.xiaohongshu.com:7001/graceful-fs/download/graceful-fs-4.2.4.tgz#2256bde14d3632958c465ebc96dc467ca07a29fb"
   integrity sha1-Ila94U02MpWMRl68ltxGfKB6Kfs=
+
+graphql-tools@^6.0.7:
+  version "6.0.7"
+  resolved "http://npm.devops.xiaohongshu.com:7001/graphql-tools/download/graphql-tools-6.0.7.tgz#b90551e1c87f03fe5c5d441092666d21f9e733e1"
+  integrity sha1-uQVR4ch/A/5cXUQQkmZtIfnnM+E=
+  dependencies:
+    "@graphql-tools/code-file-loader" "6.0.7"
+    "@graphql-tools/delegate" "6.0.7"
+    "@graphql-tools/git-loader" "6.0.7"
+    "@graphql-tools/github-loader" "6.0.7"
+    "@graphql-tools/graphql-file-loader" "6.0.7"
+    "@graphql-tools/graphql-tag-pluck" "6.0.7"
+    "@graphql-tools/import" "6.0.7"
+    "@graphql-tools/json-file-loader" "6.0.7"
+    "@graphql-tools/links" "6.0.7"
+    "@graphql-tools/load" "6.0.7"
+    "@graphql-tools/load-files" "6.0.7"
+    "@graphql-tools/merge" "6.0.7"
+    "@graphql-tools/mock" "6.0.7"
+    "@graphql-tools/module-loader" "6.0.7"
+    "@graphql-tools/relay-operation-optimizer" "6.0.7"
+    "@graphql-tools/resolvers-composition" "6.0.7"
+    "@graphql-tools/schema" "6.0.7"
+    "@graphql-tools/stitch" "6.0.7"
+    "@graphql-tools/url-loader" "6.0.7"
+    "@graphql-tools/utils" "6.0.7"
+    "@graphql-tools/wrap" "6.0.7"
+
+graphql@^15.0.0:
+  version "15.0.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/graphql/download/graphql-15.0.0.tgz#042a5eb5e2506a2e2111ce41eb446a8e570b8be9"
+  integrity sha1-BCpeteJQai4hEc5B60RqjlcLi+k=
 
 growly@^1.3.0:
   version "1.3.0"
@@ -5581,6 +6290,11 @@ hash.js@^1.0.0, hash.js@^1.0.3:
   dependencies:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
+
+he@^1.1.0:
+  version "1.2.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/he/download/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
+  integrity sha1-hK5l+n6vsWX922FWauFLrwVmTw8=
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
@@ -5739,6 +6453,16 @@ ignore@^4.0.3, ignore@^4.0.6:
   resolved "http://npm.devops.xiaohongshu.com:7001/ignore/download/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha1-dQ49tYYgh7RzfrrIIH/9HvJ7Jfw=
 
+ignore@^5.1.4:
+  version "5.1.8"
+  resolved "http://npm.devops.xiaohongshu.com:7001/ignore/download/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
+  integrity sha1-8VCotQo0KJsz4i9YiavU2AFvDlc=
+
+immutable@~3.7.6:
+  version "3.7.6"
+  resolved "http://npm.devops.xiaohongshu.com:7001/immutable/download/immutable-3.7.6.tgz#13b4d3cb12befa15482a26fe1b2ebae640071e4b"
+  integrity sha1-E7TTyxK++hVIKib+Gy665kAHHks=
+
 import-fresh@^2.0.0:
   version "2.0.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/import-fresh/download/import-fresh-2.0.0.tgz#d81355c15612d386c61f9ddd3922d4304822a546"
@@ -5755,7 +6479,7 @@ import-fresh@^3.0.0, import-fresh@^3.1.0:
     parent-module "^1.0.0"
     resolve-from "^4.0.0"
 
-import-from@^3.0.0:
+import-from@3.0.0, import-from@^3.0.0:
   version "3.0.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/import-from/download/import-from-3.0.0.tgz#055cfec38cd5a27d8057ca51376d7d3bf0891966"
   integrity sha1-BVz+w4zVon2AV8pRN219O/CJGWY=
@@ -6096,19 +6820,19 @@ is-generator-fn@^2.0.0:
   resolved "http://npm.devops.xiaohongshu.com:7001/is-generator-fn/download/is-generator-fn-2.1.0.tgz#7d140adc389aaf3011a8f2a2a4cfa6faadffb118"
   integrity sha1-fRQK3DiarzARqPKipM+m+q3/sRg=
 
+is-glob@4.0.1, is-glob@^4.0.0, is-glob@^4.0.1, is-glob@~4.0.1:
+  version "4.0.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/is-glob/download/is-glob-4.0.1.tgz#7567dbe9f2f5e2467bc77ab83c4a29482407a5dc"
+  integrity sha1-dWfb6fL14kZ7x3q4PEopSCQHpdw=
+  dependencies:
+    is-extglob "^2.1.1"
+
 is-glob@^3.1.0:
   version "3.1.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/is-glob/download/is-glob-3.1.0.tgz#7ba5ae24217804ac70707b96922567486cc3e84a"
   integrity sha1-e6WuJCF4BKxwcHuWkiVnSGzD6Eo=
   dependencies:
     is-extglob "^2.1.0"
-
-is-glob@^4.0.0, is-glob@^4.0.1, is-glob@~4.0.1:
-  version "4.0.1"
-  resolved "http://npm.devops.xiaohongshu.com:7001/is-glob/download/is-glob-4.0.1.tgz#7567dbe9f2f5e2467bc77ab83c4a29482407a5dc"
-  integrity sha1-dWfb6fL14kZ7x3q4PEopSCQHpdw=
-  dependencies:
-    is-extglob "^2.1.1"
 
 is-interactive@^1.0.0:
   version "1.0.0"
@@ -6275,6 +6999,14 @@ isobject@^4.0.0:
   resolved "http://npm.devops.xiaohongshu.com:7001/isobject/download/isobject-4.0.0.tgz#3f1c9155e73b192022a80819bacd0343711697b0"
   integrity sha1-PxyRVec7GSAiqAgZus0DQ3EWl7A=
 
+isomorphic-fetch@^2.1.1:
+  version "2.2.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/isomorphic-fetch/download/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
+  integrity sha1-YRrhrPFPXoH3KVB0coGf6XM1WKk=
+  dependencies:
+    node-fetch "^1.0.1"
+    whatwg-fetch ">=0.10.0"
+
 isstream@0.1.x, isstream@~0.1.2:
   version "0.1.2"
   resolved "http://npm.devops.xiaohongshu.com:7001/isstream/download/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
@@ -6320,6 +7052,11 @@ istanbul-reports@^3.0.2:
   dependencies:
     html-escaper "^2.0.0"
     istanbul-lib-report "^3.0.0"
+
+iterall@^1.2.1:
+  version "1.3.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/iterall/download/iterall-1.3.0.tgz#afcb08492e2915cbd8a0884eb93a8c94d0d72fea"
+  integrity sha1-r8sISS4pFcvYoIhOuTqMlNDXL+o=
 
 iterare@1.2.0:
   version "1.2.0"
@@ -6701,7 +7438,7 @@ jest@26.0.1:
     import-local "^3.0.2"
     jest-cli "^26.0.1"
 
-js-tokens@^4.0.0:
+"js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/js-tokens/download/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha1-GSA/tZmR35jjoocFDUZHzerzJJk=
@@ -7150,6 +7887,13 @@ longest@^2.0.1:
   resolved "http://npm.devops.xiaohongshu.com:7001/longest/download/longest-2.0.1.tgz#781e183296aa94f6d4d916dc335d0d17aefa23f8"
   integrity sha1-eB4YMpaqlPbU2RbcM10NF676I/g=
 
+loose-envify@^1.0.0:
+  version "1.4.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/loose-envify/download/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  integrity sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=
+  dependencies:
+    js-tokens "^3.0.0 || ^4.0.0"
+
 loud-rejection@^1.0.0:
   version "1.6.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/loud-rejection/download/loud-rejection-1.6.0.tgz#5b46f80147edee578870f086d04821cf998e551f"
@@ -7157,6 +7901,13 @@ loud-rejection@^1.0.0:
   dependencies:
     currently-unhandled "^0.4.1"
     signal-exit "^3.0.0"
+
+lower-case@^2.0.1:
+  version "2.0.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/lower-case/download/lower-case-2.0.1.tgz#39eeb36e396115cc05e29422eaea9e692c9408c7"
+  integrity sha1-Oe6zbjlhFcwF4pQi6uqeaSyUCMc=
+  dependencies:
+    tslib "^1.10.0"
 
 lru-cache@^5.1.1:
   version "5.1.1"
@@ -7381,7 +8132,7 @@ merge-stream@^2.0.0:
   resolved "http://npm.devops.xiaohongshu.com:7001/merge-stream/download/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
   integrity sha1-UoI2KaFN0AyXcPtq1H3GMQ8sH2A=
 
-merge2@^1.2.3:
+merge2@^1.2.3, merge2@^1.3.0:
   version "1.4.1"
   resolved "http://npm.devops.xiaohongshu.com:7001/merge2/download/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha1-Q2iJL4hekHRVpv19xVwMnUBJkK4=
@@ -7640,7 +8391,7 @@ mz@^2.5.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nan@^2.12.1:
+nan@^2.12.1, nan@^2.14.0:
   version "2.14.1"
   resolved "http://npm.devops.xiaohongshu.com:7001/nan/download/nan-2.14.1.tgz#d7be34dfa3105b91494c3147089315eff8874b01"
   integrity sha1-174036MQW5FJTDFHCJMV7/iHSwE=
@@ -7697,6 +8448,14 @@ nice-try@^1.0.4:
   resolved "http://npm.devops.xiaohongshu.com:7001/nice-try/download/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha1-ozeKdpbOfSI+iPybdkvX7xCJ42Y=
 
+no-case@^3.0.3:
+  version "3.0.3"
+  resolved "http://npm.devops.xiaohongshu.com:7001/no-case/download/no-case-3.0.3.tgz#c21b434c1ffe48b39087e86cfb4d2582e9df18f8"
+  integrity sha1-whtDTB/+SLOQh+hs+00lgunfGPg=
+  dependencies:
+    lower-case "^2.0.1"
+    tslib "^1.10.0"
+
 node-emoji@1.10.0:
   version "1.10.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/node-emoji/download/node-emoji-1.10.0.tgz#8886abd25d9c7bb61802a658523d1f8d2a89b2da"
@@ -7713,18 +8472,18 @@ node-fetch-npm@^2.0.2:
     json-parse-better-errors "^1.0.0"
     safe-buffer "^5.1.1"
 
-node-fetch@^1.5.3:
+node-fetch@2.6.0, node-fetch@^2.3.0, node-fetch@^2.5.0:
+  version "2.6.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/node-fetch/download/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
+  integrity sha1-5jNFY4bUqlWGP2dqerDaqP3ssP0=
+
+node-fetch@^1.0.1, node-fetch@^1.5.3:
   version "1.7.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/node-fetch/download/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
   integrity sha1-mA9vcthSEaU0fGsrwYxbhMPrR+8=
   dependencies:
     encoding "^0.1.11"
     is-stream "^1.0.1"
-
-node-fetch@^2.3.0, node-fetch@^2.5.0:
-  version "2.6.0"
-  resolved "http://npm.devops.xiaohongshu.com:7001/node-fetch/download/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
-  integrity sha1-5jNFY4bUqlWGP2dqerDaqP3ssP0=
 
 node-gyp@^5.0.2:
   version "5.1.1"
@@ -7906,6 +8665,11 @@ npmlog@^4.1.2:
     console-control-strings "~1.1.0"
     gauge "~2.7.3"
     set-blocking "~2.0.0"
+
+nullthrows@^1.1.1:
+  version "1.1.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/nullthrows/download/nullthrows-1.1.1.tgz#7818258843856ae971eae4208ad7d7eb19a431b1"
+  integrity sha1-eBgliEOFaulx6uQgitfX6xmkMbE=
 
 number-is-nan@^1.0.0:
   version "1.0.1"
@@ -8143,19 +8907,19 @@ p-finally@^2.0.0:
   resolved "http://npm.devops.xiaohongshu.com:7001/p-finally/download/p-finally-2.0.1.tgz#bd6fcaa9c559a096b680806f4d657b3f0f240561"
   integrity sha1-vW/KqcVZoJa2gIBvTWV7Pw8kBWE=
 
+p-limit@2.3.0, p-limit@^2.0.0, p-limit@^2.2.0:
+  version "2.3.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/p-limit/download/p-limit-2.3.0.tgz#3dd33c647a214fdfffd835933eb086da0dc21db1"
+  integrity sha1-PdM8ZHohT9//2DWTPrCG2g3CHbE=
+  dependencies:
+    p-try "^2.0.0"
+
 p-limit@^1.1.0:
   version "1.3.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/p-limit/download/p-limit-1.3.0.tgz#b86bd5f0c25690911c7590fcbfc2010d54b3ccb8"
   integrity sha1-uGvV8MJWkJEcdZD8v8IBDVSzzLg=
   dependencies:
     p-try "^1.0.0"
-
-p-limit@^2.0.0, p-limit@^2.2.0:
-  version "2.3.0"
-  resolved "http://npm.devops.xiaohongshu.com:7001/p-limit/download/p-limit-2.3.0.tgz#3dd33c647a214fdfffd835933eb086da0dc21db1"
-  integrity sha1-PdM8ZHohT9//2DWTPrCG2g3CHbE=
-  dependencies:
-    p-try "^2.0.0"
 
 p-locate@^2.0.0:
   version "2.0.0"
@@ -8319,6 +9083,14 @@ parseurl@~1.3.3:
   version "1.3.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/parseurl/download/parseurl-1.3.3.tgz#9da19e7bee8d12dff0513ed5b76957793bc2e8d4"
   integrity sha1-naGee+6NEt/wUT7Vt2lXeTvC6NQ=
+
+pascal-case@^3.1.1:
+  version "3.1.1"
+  resolved "http://npm.devops.xiaohongshu.com:7001/pascal-case/download/pascal-case-3.1.1.tgz#5ac1975133ed619281e88920973d2cd1f279de5f"
+  integrity sha1-WsGXUTPtYZKB6Ikglz0s0fJ53l8=
+  dependencies:
+    no-case "^3.0.3"
+    tslib "^1.10.0"
 
 pascalcase@^0.1.1:
   version "0.1.1"
@@ -8959,6 +9731,11 @@ regenerator-runtime@^0.11.0:
   resolved "http://npm.devops.xiaohongshu.com:7001/regenerator-runtime/download/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha1-vgWtf5v30i4Fb5cmzuUBf78Z4uk=
 
+regenerator-runtime@^0.13.4:
+  version "0.13.5"
+  resolved "http://npm.devops.xiaohongshu.com:7001/regenerator-runtime/download/regenerator-runtime-0.13.5.tgz#d878a1d094b4306d10b9096484b33ebd55e26697"
+  integrity sha1-2Hih0JS0MG0QuQlkhLM+vVXiZpc=
+
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"
   resolved "http://npm.devops.xiaohongshu.com:7001/regex-not/download/regex-not-1.0.2.tgz#1f4ece27e00b0b65e0247a6810e6a85d83a5752c"
@@ -8971,6 +9748,36 @@ regexpp@^3.0.0, regexpp@^3.1.0:
   version "3.1.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/regexpp/download/regexpp-3.1.0.tgz#206d0ad0a5648cffbdb8ae46438f3dc51c9f78e2"
   integrity sha1-IG0K0KVkjP+9uK5GQ489xRyfeOI=
+
+relay-compiler@9.1.0:
+  version "9.1.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/relay-compiler/download/relay-compiler-9.1.0.tgz#e2975de85192e2470daad78e30052bf9614d22ed"
+  integrity sha1-4pdd6FGS4kcNqteOMAUr+WFNIu0=
+  dependencies:
+    "@babel/core" "^7.0.0"
+    "@babel/generator" "^7.5.0"
+    "@babel/parser" "^7.0.0"
+    "@babel/runtime" "^7.0.0"
+    "@babel/traverse" "^7.0.0"
+    "@babel/types" "^7.0.0"
+    babel-preset-fbjs "^3.3.0"
+    chalk "^2.4.1"
+    fast-glob "^2.2.2"
+    fb-watchman "^2.0.0"
+    fbjs "^1.0.0"
+    immutable "~3.7.6"
+    nullthrows "^1.1.1"
+    relay-runtime "9.1.0"
+    signedsource "^1.0.0"
+    yargs "^14.2.0"
+
+relay-runtime@9.1.0:
+  version "9.1.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/relay-runtime/download/relay-runtime-9.1.0.tgz#d0534007d5c43e7b9653c6f5cc112ffac09c5020"
+  integrity sha1-0FNAB9XEPnuWU8b1zBEv+sCcUCA=
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    fbjs "^1.0.0"
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
@@ -9128,6 +9935,11 @@ retry@^0.10.0:
   resolved "http://npm.devops.xiaohongshu.com:7001/retry/download/retry-0.10.1.tgz#e76388d217992c252750241d3d3956fed98d8ff4"
   integrity sha1-52OI0heZLCUnUCQdPTlW/tmNj/Q=
 
+reusify@^1.0.4:
+  version "1.0.4"
+  resolved "http://npm.devops.xiaohongshu.com:7001/reusify/download/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
+  integrity sha1-kNo4Kx4SbvwCFG6QhFqI2xKSXXY=
+
 rimraf@2.6.3:
   version "2.6.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/rimraf/download/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"
@@ -9171,6 +9983,11 @@ run-async@^2.2.0, run-async@^2.4.0:
   version "2.4.1"
   resolved "http://npm.devops.xiaohongshu.com:7001/run-async/download/run-async-2.4.1.tgz#8440eccf99ea3e70bd409d49aab88e10c189a455"
   integrity sha1-hEDsz5nqPnC9QJ1JqriOEMGJpFU=
+
+run-parallel@^1.1.9:
+  version "1.1.9"
+  resolved "http://npm.devops.xiaohongshu.com:7001/run-parallel/download/run-parallel-1.1.9.tgz#c9dd3a7cf9f4b2c4b6244e173a6ed866e61dd679"
+  integrity sha1-yd06fPn0ssS2JE4XOm7YZuYd1nk=
 
 run-queue@^1.0.0, run-queue@^1.0.3:
   version "1.0.3"
@@ -9327,7 +10144,7 @@ set-value@^2.0.0, set-value@^2.0.1:
     is-plain-object "^2.0.3"
     split-string "^3.0.1"
 
-setimmediate@^1.0.4:
+setimmediate@^1.0.4, setimmediate@^1.0.5:
   version "1.0.5"
   resolved "http://npm.devops.xiaohongshu.com:7001/setimmediate/download/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
   integrity sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=
@@ -9403,6 +10220,19 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/signal-exit/download/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha1-oUEMLt2PB3sItOJTyOrPyvBXRhw=
+
+signedsource@^1.0.0:
+  version "1.0.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/signedsource/download/signedsource-1.0.0.tgz#1ddace4981798f93bd833973803d80d52e93ad6a"
+  integrity sha1-HdrOSYF5j5O9gzlzgD2A1S6TrWo=
+
+simple-git@2.5.0:
+  version "2.5.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/simple-git/download/simple-git-2.5.0.tgz#538b14b25f83916a56f30eca53f13796db6712f6"
+  integrity sha1-U4sUsl+DkWpW8w7KU/E3lttnEvY=
+  dependencies:
+    "@kwsites/exec-p" "^0.4.0"
+    debug "^4.0.1"
 
 sisteransi@^1.0.4:
   version "1.0.5"
@@ -9889,6 +10719,17 @@ strong-log-transformer@^2.0.0:
     minimist "^1.2.0"
     through "^2.3.4"
 
+subscriptions-transport-ws@0.9.16:
+  version "0.9.16"
+  resolved "http://npm.devops.xiaohongshu.com:7001/subscriptions-transport-ws/download/subscriptions-transport-ws-0.9.16.tgz#90a422f0771d9c32069294c08608af2d47f596ec"
+  integrity sha1-kKQi8HcdnDIGkpTAhgivLUf1luw=
+  dependencies:
+    backo2 "^1.0.2"
+    eventemitter3 "^3.1.0"
+    iterall "^1.2.1"
+    symbol-observable "^1.0.4"
+    ws "^5.2.0"
+
 superagent@^3.8.3:
   version "3.8.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/superagent/download/superagent-3.8.3.tgz#460ea0dbdb7d5b11bc4f78deba565f86a178e128"
@@ -9940,7 +10781,7 @@ supports-hyperlinks@^2.0.0:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
 
-symbol-observable@1.2.0, symbol-observable@^1.1.0:
+symbol-observable@1.2.0, symbol-observable@^1.0.4, symbol-observable@^1.1.0:
   version "1.2.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/symbol-observable/download/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha1-wiaIrtTqs83C3+rLtWFmBWCgCAQ=
@@ -10223,6 +11064,13 @@ trim-off-newlines@^1.0.0:
   resolved "http://npm.devops.xiaohongshu.com:7001/trim-off-newlines/download/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
   integrity sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
 
+ts-invariant@^0.4.0:
+  version "0.4.4"
+  resolved "http://npm.devops.xiaohongshu.com:7001/ts-invariant/download/ts-invariant-0.4.4.tgz#97a523518688f93aafad01b0e80eb803eb2abd86"
+  integrity sha1-l6UjUYaI+TqvrQGw6A64A+sqvYY=
+  dependencies:
+    tslib "^1.9.3"
+
 ts-jest@26.1.0:
   version "26.1.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/ts-jest/download/ts-jest-26.1.0.tgz#e9070fc97b3ea5557a48b67c631c74eb35e15417"
@@ -10280,12 +11128,12 @@ tsconfig-paths@3.9.0, tsconfig-paths@^3.4.0, tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@2.0.0:
+tslib@2.0.0, tslib@~2.0.0:
   version "2.0.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/tslib/download/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
   integrity sha1-GNE/wtzgQFHiDwdMyDh/2Aic5PM=
 
-tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
   version "1.13.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/tslib/download/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha1-yIHhPMcBWJTtkUhi0nZDb6mkcEM=
@@ -10403,6 +11251,11 @@ typescript@~2.9.1:
   resolved "http://npm.devops.xiaohongshu.com:7001/typescript/download/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
   integrity sha1-HL9h0F1rliaSROtqO85L2RTg8Aw=
 
+ua-parser-js@^0.7.18:
+  version "0.7.21"
+  resolved "http://npm.devops.xiaohongshu.com:7001/ua-parser-js/download/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
+  integrity sha1-hTz5zpP2QvZxdCc8w0Vlrm8wh3c=
+
 uglify-js@^3.1.4:
   version "3.9.4"
   resolved "http://npm.devops.xiaohongshu.com:7001/uglify-js/download/uglify-js-3.9.4.tgz#867402377e043c1fc7b102253a22b64e5862401b"
@@ -10467,6 +11320,13 @@ universalify@^1.0.0:
   version "1.0.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/universalify/download/universalify-1.0.0.tgz#b61a1da173e8435b2fe3c67d29b9adf8594bd16d"
   integrity sha1-thodoXPoQ1sv48Z9Kbmt+FlL0W0=
+
+unixify@1.0.0:
+  version "1.0.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/unixify/download/unixify-1.0.0.tgz#3a641c8c2ffbce4da683a5c70f03a462940c2090"
+  integrity sha1-OmQcjC/7zk2mg6XHDwOkYpQMIJA=
+  dependencies:
+    normalize-path "^2.1.1"
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
@@ -10583,6 +11443,11 @@ v8-to-istanbul@^4.1.3:
     convert-source-map "^1.6.0"
     source-map "^0.7.3"
 
+valid-url@1.0.9:
+  version "1.0.9"
+  resolved "http://npm.devops.xiaohongshu.com:7001/valid-url/download/valid-url-1.0.9.tgz#1c14479b40f1397a75782f115e4086447433a200"
+  integrity sha1-HBRHm0DxOXp1eC8RXkCGRHQzogA=
+
 validate-npm-package-license@^3.0.1, validate-npm-package-license@^3.0.3:
   version "3.0.4"
   resolved "http://npm.devops.xiaohongshu.com:7001/validate-npm-package-license/download/validate-npm-package-license-3.0.4.tgz#fc91f6b9c7ba15c857f4cb2c5defeec39d4f410a"
@@ -10616,6 +11481,14 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "http://npm.devops.xiaohongshu.com:7001/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
+
+vue-template-compiler@^2.6.11:
+  version "2.6.11"
+  resolved "http://npm.devops.xiaohongshu.com:7001/vue-template-compiler/download/vue-template-compiler-2.6.11.tgz#c04704ef8f498b153130018993e56309d4698080"
+  integrity sha1-wEcE749JixUxMAGJk+VjCdRpgIA=
+  dependencies:
+    de-indent "^1.0.2"
+    he "^1.1.0"
 
 w3c-hr-time@^1.0.2:
   version "1.0.2"
@@ -10720,12 +11593,28 @@ webpack@4.43.0:
     watchpack "^1.6.1"
     webpack-sources "^1.4.1"
 
+websocket@1.0.31:
+  version "1.0.31"
+  resolved "http://npm.devops.xiaohongshu.com:7001/websocket/download/websocket-1.0.31.tgz#e5d0f16c3340ed87670e489ecae6144c79358730"
+  integrity sha1-5dDxbDNA7YdnDkieyuYUTHk1hzA=
+  dependencies:
+    debug "^2.2.0"
+    es5-ext "^0.10.50"
+    nan "^2.14.0"
+    typedarray-to-buffer "^3.1.5"
+    yaeti "^0.0.6"
+
 whatwg-encoding@^1.0.5:
   version "1.0.5"
   resolved "http://npm.devops.xiaohongshu.com:7001/whatwg-encoding/download/whatwg-encoding-1.0.5.tgz#5abacf777c32166a51d085d6b4f3e7d27113ddb0"
   integrity sha1-WrrPd3wyFmpR0IXWtPPn0nET3bA=
   dependencies:
     iconv-lite "0.4.24"
+
+whatwg-fetch@3.0.0, whatwg-fetch@>=0.10.0:
+  version "3.0.0"
+  resolved "http://npm.devops.xiaohongshu.com:7001/whatwg-fetch/download/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
+  integrity sha1-/IBORYzEYACbGiuWa8iBfSV4rvs=
 
 whatwg-mimetype@^2.3.0:
   version "2.3.0"
@@ -10919,6 +11808,13 @@ write@1.0.3:
   dependencies:
     mkdirp "^0.5.1"
 
+ws@^5.2.0:
+  version "5.2.2"
+  resolved "http://npm.devops.xiaohongshu.com:7001/ws/download/ws-5.2.2.tgz#dffef14866b8e8dc9133582514d1befaf96e980f"
+  integrity sha1-3/7xSGa46NyRM1glFNG++vlumA8=
+  dependencies:
+    async-limiter "~1.0.0"
+
 ws@^7.2.3:
   version "7.3.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/ws/download/ws-7.3.0.tgz#4b2f7f219b3d3737bc1a2fbf145d825b94d38ffd"
@@ -10943,6 +11839,11 @@ y18n@^4.0.0:
   version "4.0.0"
   resolved "http://npm.devops.xiaohongshu.com:7001/y18n/download/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b"
   integrity sha1-le+U+F7MgdAHwmThkKEg8KPIVms=
+
+yaeti@^0.0.6:
+  version "0.0.6"
+  resolved "http://npm.devops.xiaohongshu.com:7001/yaeti/download/yaeti-0.0.6.tgz#f26f484d72684cf42bedfb76970aa1608fbf9577"
+  integrity sha1-8m9ITXJoTPQr7ft2lwqhYI+/lXc=
 
 yallist@^3.0.0, yallist@^3.0.2, yallist@^3.0.3:
   version "3.1.1"
@@ -10985,7 +11886,7 @@ yargs-parser@^15.0.1:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs@^14.2.2:
+yargs@^14.2.0, yargs@^14.2.2:
   version "14.2.3"
   resolved "http://npm.devops.xiaohongshu.com:7001/yargs/download/yargs-14.2.3.tgz#1a1c3edced1afb2a2fea33604bc6d1d8d688a414"
   integrity sha1-Ghw+3O0a+yov6jNgS8bR2NaIpBQ=
@@ -11023,6 +11924,19 @@ yn@3.1.1:
   version "3.1.1"
   resolved "http://npm.devops.xiaohongshu.com:7001/yn/download/yn-3.1.1.tgz#1e87401a09d767c1d5eab26a6e4c185182d2eb50"
   integrity sha1-HodAGgnXZ8HV6rJqbkwYUYLS61A=
+
+zen-observable-ts@^0.8.21:
+  version "0.8.21"
+  resolved "http://npm.devops.xiaohongshu.com:7001/zen-observable-ts/download/zen-observable-ts-0.8.21.tgz#85d0031fbbde1eba3cd07d3ba90da241215f421d"
+  integrity sha1-hdADH7veHro80H07qQ2iQSFfQh0=
+  dependencies:
+    tslib "^1.9.3"
+    zen-observable "^0.8.0"
+
+zen-observable@^0.8.0:
+  version "0.8.15"
+  resolved "http://npm.devops.xiaohongshu.com:7001/zen-observable/download/zen-observable-0.8.15.tgz#96415c512d8e3ffd920afd3889604e30b9eaac15"
+  integrity sha1-lkFcUS2OP/2SCv04iWBOMLnqrBU=
 
 zipkin-transport-http@^0.14.1:
   version "0.14.3"

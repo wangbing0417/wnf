@@ -14,3 +14,16 @@ cd packages/userService && yarn run codegen && yarn run start:dev
 http://localhost:9000/healthcheck  
 http://localhost:9000/add  
 http://localhost:9000/post/3
+
+`引入graphql`  
+访问 http://localhost:9000/graphql
+
+```graphql
+query {
+  author(id: 1) {
+    firstName
+    lastName
+  }
+  salary(city: "beijing")
+}
+```
