@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "codegen": "thrift-typescript --target thrift-server --sourceDir ../thrift --outDir ../codegen",
+    "codegen": "thrift-typescript --target thrift-server --sourceDir ../thrift --outDir codegen",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",

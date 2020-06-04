@@ -2,7 +2,7 @@ import { Controller, Get, Param } from '@nestjs/common'
 import { config } from '@creditkarma/dynamic-config'
 import { createHttpClient } from '@creditkarma/thrift-client'
 import { AppService } from './app.service'
-import { ContentService, Post } from '../codegen/com/content/ContentService'
+import { ContentService, Post } from './codegen/com/content/ContentService'
 
 @Controller()
 export class AppController {
