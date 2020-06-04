@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "scripts": {
+    "gateway":"npm run ",
     "commit": "git-cz",
     "format": "prettier \"**/*.ts\" --ignore-path ./.prettierignore --write && git status",
     "lint": "npm run lint:packages",
