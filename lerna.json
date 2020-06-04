@@ -1,0 +1,24 @@
+{
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "skipNpm": true
+    },
+    "version": {
+      "allowBranch": "master",
+      "commitHooks": false,
+      "conventionalCommits": true,
+      "changelogPreset": "angular-gitlab"
+    }
+  },
+  "packages": [
+    "packages/*"
+  ],
+  "ignoreChanges": [
+    "ignore",
+    "**/*.md",
+    "*.md"
+  ],
+  "version": "independent"
+}
