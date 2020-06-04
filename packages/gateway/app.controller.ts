@@ -19,9 +19,17 @@ export class AppController {
 
     const post = await contentClient.getPost(id)
 
-    // const post = await contentClient.add(1, 23)
-
     return post
+  }
+
+  @Get('/add')
+  async add() {
+    const clientConfig = await config().get('gateway.client')
+    // 建立客户端
+    const contentClient: ContentService.Client = createHttpClient(ContentService.Client, clientConfig)
+    const value = await contentClient.add(1, 23)
+
+    return value
   }
 
   @Get('/healthcheck')
