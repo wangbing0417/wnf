@@ -27,3 +27,11 @@ query {
   salary(city: "beijing")
 }
 ```
+
+`建立项目前端 vueCms`
+
+```js
+cd package/vueCms
+npm i
+npm run dev
+```
