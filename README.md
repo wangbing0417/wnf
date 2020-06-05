@@ -26,6 +26,17 @@ query {
   }
   salary(city: "beijing")
 }
+
+query {
+  salary(city: "shanghai")
+  getPost(id: 2) {
+    id
+    title
+    date {
+      month
+    }
+  }
+}
 ```
 
 `建立项目前端 vueCms`
@@ -34,4 +45,12 @@ query {
 cd package/vueCms
 npm i
 npm run dev
+```
+
+`支持vueCms访问graphql接口`
+
+```js
+npm i -S vue-apollo graphql apollo-boost
+
+完成 vueCms 调用 graphql 与 restapi
 ```
