@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>healthCheck:{{healthCheckStatus}}</p>
+    <p>healthCheck:{{ healthCheckStatus }}</p>
 
     <beer-button variant="text">text</beer-button>
     <beer-button variant="link">link</beer-button>
@@ -11,7 +11,7 @@
 <script>
 import BeerButton from '@beer/cmp/common/Button/Button'
 import BeerAlert from '@beer/cmp/common/Alert/Alert'
-import { healthCheck, getPost } from './services'
+import { healthCheck, getPost, getAuthor } from './services'
 
 export default {
   name: 'Demo',
@@ -34,11 +34,17 @@ export default {
       getPost(2).then((res) => {
         console.log('getPost res', res)
       })
+    },
+    getAuthor() {
+      getAuthor({ id: 2, city: 'shanghai' }).then((res) => {
+        console.log('getAuthor res', res)
+      })
     }
   },
   created() {
     this.healthCheck()
     this.getPost()
+    this.getAuthor()
   }
 }
 </script>

@@ -13,6 +13,9 @@
   "dependencies": {
     "@xhs/launcher": "^2.6.0",
     "@xhs/yam-beer": "^2.25.0",
-    "@xhs/yam-style": "^0.3.11"
+    "@xhs/yam-style": "^0.3.11",
+    "apollo-boost": "^0.4.9",
+    "graphql": "^15.0.0",
+    "vue-apollo": "^3.0.3"
   }
 }

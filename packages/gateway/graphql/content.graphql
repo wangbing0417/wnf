@@ -1,0 +1,22 @@
+type Post {
+  id: Int
+  author: User
+  date: PublishedDate
+  title: String
+  body: String
+}
+
+type User {
+  id: Int
+  name: String
+}
+
+type PublishedDate {
+  month: Int
+  day: Int
+  year: Int
+}
+
+type Query {
+  getPost(id: Int): Post
+}

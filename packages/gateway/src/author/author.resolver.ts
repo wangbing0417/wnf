@@ -7,7 +7,6 @@ export class AuthorResolver {
 
   @Query('author')
   async getAuthor(@Args('id') id: number) {
-    //   async getAuthor() {
     return await this.authorsService.findOneById(id)
   }
 
