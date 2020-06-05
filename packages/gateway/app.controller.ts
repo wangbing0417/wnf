@@ -8,7 +8,7 @@ import { ContentService, Post } from './codegen/com/content/ContentService'
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('/post/:id')
+  @Get('/api/thrift/post/:id')
   async getPost(@Param('id') id: number) {
     const clientConfig = await config().get('gateway.client')
 
@@ -19,7 +19,9 @@ export class AppController {
 
     const post = await contentClient.getPost(id)
 
-    return post
+    return {
+      data: post
+    }
   }
 
   @Get('/add')
@@ -32,8 +34,13 @@ export class AppController {
     return value
   }
 
-  @Get('/healthcheck')
+  @Get('/api/healthcheck')
   healthCheck() {
-    return 'gateway success'
+    return {
+      data: {
+        msg: 'gateway success'
+      },
+      success: true
+    }
   }
 }
